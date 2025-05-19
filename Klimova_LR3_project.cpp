@@ -86,6 +86,14 @@ void calculateProduct()
 
 void countDigits() 
 {
-    // Реализация будет добавлена позже
-    cout << "Функция countDigits() пока не реализована." << endl;
+  int temp = X;
+    int product = 1;
+
+    for (int i = 0; i < N; ++i) {
+        int digit = temp % 10;
+        product *= digit;
+        temp /= 10;
+    }
+
+    cout << "Произведение последних " << N << " цифр числа X: " << product << endl;
 }
