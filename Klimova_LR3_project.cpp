@@ -60,8 +60,17 @@ void enterNumber()
 
 void enterDigit() 
 {
-    // Реализация будет добавлена позже
-    cout << "Функция enterDigit() пока не реализована." << endl;
+   int digitCount = 0;
+    int temp = X;
+    while (temp > 0) {
+        digitCount++;
+        temp /= 10;
+    }
+
+    do {
+        cout << "Введите цифру N (меньше количества разрядов X): ";
+        cin >> N;
+    } while (N < 0 || N >= digitCount);
 }
 
 void calculateProduct() 
