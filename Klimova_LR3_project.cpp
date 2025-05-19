@@ -47,10 +47,15 @@ int main()
     return 0;
 }
 
+int N;
+int X;
+
 void enterNumber() 
 {
-    // Реализация будет добавлена позже
-    cout << "Функция enterNumber() пока не реализована." << endl;
+    do {
+        cout << "Введите натуральное число X: ";
+        cin >> X;
+    } while (X <= 0);
 }
 
 void enterDigit() 
