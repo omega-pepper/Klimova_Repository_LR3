@@ -75,8 +75,13 @@ void enterDigit()
 
 void calculateProduct() 
 {
-    // Реализация будет добавлена позже
-    cout << "Функция calculateProduct() пока не реализована." << endl;
+    int count = 0;
+    int temp = X;
+    while (temp > 0) {
+        count++;
+        temp /= 10;
+    }
+    cout << "Количество цифр в числе X: " << count << endl;
 }
 
 void countDigits() 
